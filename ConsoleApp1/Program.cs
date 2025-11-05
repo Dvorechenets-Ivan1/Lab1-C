@@ -5,8 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        int numberOfThreads = 20;
-        int commonDuration = 2;
+        int numberOfThreads = 50;
+        int commonDuration = 10;
+        //int numberOfThreads = 20;
+        //int commonDuration = 2;
         Console.WriteLine($"Common duration for all threads: {commonDuration} seconds");
 
         CountdownEvent startSignal = new CountdownEvent(1);
@@ -95,3 +97,4 @@ class ThreadController
     }
 
 }
+
