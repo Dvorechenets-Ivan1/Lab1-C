@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         int numberOfThreads = 20;
-        int commonDuration = 2; // Однаковий час для всіх потоків
+        int commonDuration = 2;
         Console.WriteLine($"Common duration for all threads: {commonDuration} seconds");
 
         CountdownEvent startSignal = new CountdownEvent(1);
@@ -93,4 +93,5 @@ class ThreadController
         TimeSpan actualDuration = DateTime.Now - startTime;
         Console.WriteLine($"All threads stopped after {actualDuration.TotalSeconds:F3} seconds");
     }
+
 }
